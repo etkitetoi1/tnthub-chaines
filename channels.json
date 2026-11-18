@@ -25,7 +25,10 @@
   "liveUrl": "https://www.france.tv/france-2/direct.html",
   "verified": "ok",
   "number": 2,
-  "appPackage": "fr.francetv.pluzz"
+  "appPackage": "fr.francetv.pluzz",
+  "viaMolotov": true,
+  "viaFree": true,
+  "freeUrl": "https://tv.free.fr/home/included_channels/270/play"
  },
  {
   "id": "france3",
@@ -40,7 +43,10 @@
   "liveUrl": "https://www.france.tv/france-3/direct.html",
   "verified": "site",
   "number": 3,
-  "appPackage": "fr.francetv.pluzz"
+  "appPackage": "fr.francetv.pluzz",
+  "viaMolotov": true,
+  "viaFree": true,
+  "freeUrl": "https://tv.free.fr/home/included_channels/348/play"
  },
  {
   "id": "france4",
@@ -55,7 +61,9 @@
   "liveUrl": "https://www.france.tv/france-4/direct.html",
   "verified": "site",
   "number": 4,
-  "appPackage": "fr.francetv.pluzz"
+  "appPackage": "fr.francetv.pluzz",
+  "viaMolotov": true,
+  "viaFree": true
  },
  {
   "id": "france5",
@@ -69,7 +77,9 @@
   "liveUrl": "https://www.france.tv/france-5/direct.html",
   "verified": "site",
   "number": 5,
-  "appPackage": "fr.francetv.pluzz"
+  "appPackage": "fr.francetv.pluzz",
+  "viaMolotov": true,
+  "viaFree": true
  },
  {
   "id": "m6",
@@ -98,7 +108,9 @@
   "liveUrl": "https://www.arte.tv/fr/direct/",
   "verified": "site",
   "number": 7,
-  "appPackage": "tv.arte.plus7"
+  "appPackage": "tv.arte.plus7",
+  "viaMolotov": true,
+  "viaFree": true
  },
  {
   "id": "lcp",
@@ -116,7 +128,9 @@
   ],
   "liveUrl": "https://www.publicsenat.fr/direct",
   "verified": "ok",
-  "number": 8
+  "number": 8,
+  "viaMolotov": true,
+  "viaFree": true
  },
  {
   "id": "w9",
@@ -187,7 +201,10 @@
   ],
   "liveUrl": "https://www.bfmtv.com/en-direct/",
   "verified": "site",
-  "number": 13
+  "number": 13,
+  "viaMolotov": true,
+  "viaFree": true,
+  "freeUrl": "https://tv.free.fr/home/included_channels/429/play"
  },
  {
   "id": "cnews",
@@ -201,7 +218,9 @@
   ],
   "liveUrl": "https://www.cnews.fr/direct",
   "verified": "site",
-  "number": 14
+  "number": 14,
+  "viaMolotov": true,
+  "viaFree": true
  },
  {
   "id": "lci",
@@ -233,7 +252,9 @@
   "liveUrl": "https://www.france.tv/franceinfo/direct.html",
   "verified": "site",
   "number": 16,
-  "appPackage": "fr.francetv.pluzz"
+  "appPackage": "fr.francetv.pluzz",
+  "viaMolotov": true,
+  "viaFree": true
  },
  {
   "id": "cstar",
@@ -247,7 +268,9 @@
   ],
   "liveUrl": "https://www.mycanal.fr/",
   "verified": "a_tester",
-  "number": 17
+  "number": 17,
+  "viaMolotov": true,
+  "viaFree": true
  },
  {
   "id": "t18",
@@ -261,7 +284,8 @@
   ],
   "liveUrl": "https://www.t18.fr/",
   "verified": "site",
-  "number": 18
+  "number": 18,
+  "viaFree": true
  },
  {
   "id": "novo19",
@@ -277,7 +301,8 @@
   "liveUrl": "https://www.tf1.fr/novo19/direct",
   "verified": "a_tester",
   "number": 19,
-  "appPackage": "fr.tf1.mytf1"
+  "appPackage": "fr.tf1.mytf1",
+  "viaFree": true
  },
  {
   "id": "tf1sf",
@@ -307,7 +332,9 @@
   ],
   "liveUrl": "https://www.lequipe.fr/tv/",
   "verified": "a_tester",
-  "number": 21
+  "number": 21,
+  "viaMolotov": true,
+  "viaFree": true
  },
  {
   "id": "6ter",
@@ -334,7 +361,9 @@
   ],
   "liveUrl": "https://www.rmcplus.fr/",
   "verified": "site",
-  "number": 23
+  "number": 23,
+  "viaMolotov": true,
+  "viaFree": true
  },
  {
   "id": "rmcdec",
@@ -347,7 +376,9 @@
   ],
   "liveUrl": "https://www.rmcplus.fr/",
   "verified": "site",
-  "number": 24
+  "number": 24,
+  "viaMolotov": true,
+  "viaFree": true
  },
  {
   "id": "cherie25",
@@ -360,7 +391,8 @@
   ],
   "liveUrl": "https://www.nrj-play.fr/cherie-25/live",
   "verified": "a_tester",
-  "number": 25
+  "number": 25,
+  "viaMolotov": true
  },
  {
   "id": "france24",
@@ -372,7 +404,8 @@
    "France 24"
   ],
   "liveUrl": "https://www.france24.com/fr/direct",
-  "verified": "a_tester"
+  "verified": "a_tester",
+  "viaMolotov": true
  },
  {
   "id": "euronews",
@@ -484,6 +517,150 @@
    "Clubbing TV"
   ],
   "liveUrl": "https://www.clubbingtv.com/",
+  "verified": "a_tester"
+ },
+ {
+  "id": "uk_sky",
+  "name": "UK – Sky News",
+  "categories": [
+   "Étrangères"
+  ],
+  "epgNames": [
+   "UK – Sky News"
+  ],
+  "liveUrl": "https://www.youtube.com/@SkyNews/live",
+  "verified": "a_tester"
+ },
+ {
+  "id": "uk_gb",
+  "name": "UK – GB News",
+  "categories": [
+   "Étrangères"
+  ],
+  "epgNames": [
+   "UK – GB News"
+  ],
+  "liveUrl": "https://www.youtube.com/@GBNews/live",
+  "verified": "a_tester"
+ },
+ {
+  "id": "us_nbc",
+  "name": "US – NBC News NOW",
+  "categories": [
+   "Étrangères"
+  ],
+  "epgNames": [
+   "US – NBC News NOW"
+  ],
+  "liveUrl": "https://www.nbcnews.com/now",
+  "verified": "a_tester"
+ },
+ {
+  "id": "us_abc",
+  "name": "US – ABC News Live",
+  "categories": [
+   "Étrangères"
+  ],
+  "epgNames": [
+   "US – ABC News Live"
+  ],
+  "liveUrl": "https://abcnews.go.com/Live",
+  "verified": "a_tester"
+ },
+ {
+  "id": "us_cbs",
+  "name": "US – CBS News 24/7",
+  "categories": [
+   "Étrangères"
+  ],
+  "epgNames": [
+   "US – CBS News 24/7"
+  ],
+  "liveUrl": "https://www.cbsnews.com/live/",
+  "verified": "a_tester"
+ },
+ {
+  "id": "us_bloomberg",
+  "name": "US – Bloomberg TV",
+  "categories": [
+   "Étrangères"
+  ],
+  "epgNames": [
+   "US – Bloomberg TV"
+  ],
+  "liveUrl": "https://www.bloomberg.com/live",
+  "verified": "a_tester"
+ },
+ {
+  "id": "es_dw",
+  "name": "ES – DW Español",
+  "categories": [
+   "Étrangères"
+  ],
+  "epgNames": [
+   "ES – DW Español"
+  ],
+  "liveUrl": "https://www.youtube.com/@dwespanol/live",
+  "verified": "a_tester"
+ },
+ {
+  "id": "es_euronews",
+  "name": "ES – Euronews Español",
+  "categories": [
+   "Étrangères"
+  ],
+  "epgNames": [
+   "ES – Euronews Español"
+  ],
+  "liveUrl": "https://es.euronews.com/live",
+  "verified": "a_tester"
+ },
+ {
+  "id": "es_f24",
+  "name": "ES – France 24 Español",
+  "categories": [
+   "Étrangères"
+  ],
+  "epgNames": [
+   "ES – France 24 Español"
+  ],
+  "liveUrl": "https://www.france24.com/es/en-directo",
+  "verified": "a_tester"
+ },
+ {
+  "id": "de_dw",
+  "name": "DE – DW Deutsch",
+  "categories": [
+   "Étrangères"
+  ],
+  "epgNames": [
+   "DE – DW Deutsch"
+  ],
+  "liveUrl": "https://www.youtube.com/@dwdeutsch/live",
+  "verified": "a_tester"
+ },
+ {
+  "id": "de_welt",
+  "name": "DE – WELT",
+  "categories": [
+   "Étrangères"
+  ],
+  "epgNames": [
+   "DE – WELT"
+  ],
+  "liveUrl": "https://www.welt.de/mediathek/livestream/",
+  "verified": "a_tester"
+ },
+ {
+  "id": "de_ard",
+  "name": "DE – ARD Mediathek (direct)",
+  "categories": [
+   "Étrangères"
+  ],
+  "epgNames": [
+   "DE – ARD Mediathek (direct)"
+  ],
+  "liveUrl": "https://www.ardmediathek.de/live",
   "verified": "a_tester"
  }
 ]
