@@ -1,0 +1,489 @@
+[
+ {
+  "id": "tf1",
+  "name": "TF1",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "TF1"
+  ],
+  "liveUrl": "https://www.tf1.fr/tf1/direct",
+  "verified": "ok",
+  "number": 1,
+  "appPackage": "fr.tf1.mytf1"
+ },
+ {
+  "id": "france2",
+  "name": "France 2",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "France 2"
+  ],
+  "liveUrl": "https://www.france.tv/france-2/direct.html",
+  "verified": "ok",
+  "number": 2,
+  "appPackage": "fr.francetv.pluzz"
+ },
+ {
+  "id": "france3",
+  "name": "France 3",
+  "categories": [
+   "TNT",
+   "Locales"
+  ],
+  "epgNames": [
+   "France 3"
+  ],
+  "liveUrl": "https://www.france.tv/france-3/direct.html",
+  "verified": "site",
+  "number": 3,
+  "appPackage": "fr.francetv.pluzz"
+ },
+ {
+  "id": "france4",
+  "name": "France 4",
+  "categories": [
+   "TNT",
+   "Jeunesse"
+  ],
+  "epgNames": [
+   "France 4"
+  ],
+  "liveUrl": "https://www.france.tv/france-4/direct.html",
+  "verified": "site",
+  "number": 4,
+  "appPackage": "fr.francetv.pluzz"
+ },
+ {
+  "id": "france5",
+  "name": "France 5",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "France 5"
+  ],
+  "liveUrl": "https://www.france.tv/france-5/direct.html",
+  "verified": "site",
+  "number": 5,
+  "appPackage": "fr.francetv.pluzz"
+ },
+ {
+  "id": "m6",
+  "name": "M6",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "M6"
+  ],
+  "liveUrl": "https://www.m6plus.fr/m6/direct",
+  "verified": "site",
+  "number": 6,
+  "appPackage": "fr.m6.m6replay"
+ },
+ {
+  "id": "arte",
+  "name": "Arte",
+  "categories": [
+   "TNT",
+   "Culture"
+  ],
+  "epgNames": [
+   "Arte"
+  ],
+  "liveUrl": "https://www.arte.tv/fr/direct/",
+  "verified": "site",
+  "number": 7,
+  "appPackage": "tv.arte.plus7"
+ },
+ {
+  "id": "lcp",
+  "name": "LCP / Public Sénat",
+  "categories": [
+   "TNT",
+   "Infos"
+  ],
+  "epgNames": [
+   "LCP",
+   "LCP Assemblée nationale",
+   "LCP-Assemblée nationale",
+   "Public Sénat",
+   "LCP Public Sénat"
+  ],
+  "liveUrl": "https://www.publicsenat.fr/direct",
+  "verified": "ok",
+  "number": 8
+ },
+ {
+  "id": "w9",
+  "name": "W9",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "W9"
+  ],
+  "liveUrl": "https://www.m6plus.fr/w9/direct",
+  "verified": "site",
+  "number": 9,
+  "appPackage": "fr.m6.m6replay"
+ },
+ {
+  "id": "tmc",
+  "name": "TMC",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "TMC"
+  ],
+  "liveUrl": "https://www.tf1.fr/tmc/direct",
+  "verified": "site",
+  "number": 10,
+  "appPackage": "fr.tf1.mytf1"
+ },
+ {
+  "id": "tfx",
+  "name": "TFX",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "TFX"
+  ],
+  "liveUrl": "https://www.tf1.fr/tfx/direct",
+  "verified": "site",
+  "number": 11,
+  "appPackage": "fr.tf1.mytf1"
+ },
+ {
+  "id": "gulli",
+  "name": "Gulli",
+  "categories": [
+   "TNT",
+   "Jeunesse"
+  ],
+  "epgNames": [
+   "Gulli"
+  ],
+  "liveUrl": "https://www.m6plus.fr/gulli/direct",
+  "verified": "site",
+  "number": 12,
+  "appPackage": "fr.m6.m6replay"
+ },
+ {
+  "id": "bfmtv",
+  "name": "BFM TV",
+  "categories": [
+   "TNT",
+   "Infos"
+  ],
+  "epgNames": [
+   "BFM TV"
+  ],
+  "liveUrl": "https://www.bfmtv.com/en-direct/",
+  "verified": "site",
+  "number": 13
+ },
+ {
+  "id": "cnews",
+  "name": "CNews",
+  "categories": [
+   "TNT",
+   "Infos"
+  ],
+  "epgNames": [
+   "CNews"
+  ],
+  "liveUrl": "https://www.cnews.fr/direct",
+  "verified": "site",
+  "number": 14
+ },
+ {
+  "id": "lci",
+  "name": "LCI",
+  "categories": [
+   "TNT",
+   "Infos"
+  ],
+  "epgNames": [
+   "LCI"
+  ],
+  "liveUrl": "https://www.tf1.fr/lci/direct",
+  "verified": "site",
+  "number": 15,
+  "appPackage": "fr.tf1.mytf1"
+ },
+ {
+  "id": "franceinfo",
+  "name": "franceinfo",
+  "categories": [
+   "TNT",
+   "Infos"
+  ],
+  "epgNames": [
+   "franceinfo",
+   "France Info",
+   "franceinfo:"
+  ],
+  "liveUrl": "https://www.france.tv/franceinfo/direct.html",
+  "verified": "site",
+  "number": 16,
+  "appPackage": "fr.francetv.pluzz"
+ },
+ {
+  "id": "cstar",
+  "name": "CStar",
+  "categories": [
+   "TNT",
+   "Musique"
+  ],
+  "epgNames": [
+   "CStar"
+  ],
+  "liveUrl": "https://www.mycanal.fr/",
+  "verified": "a_tester",
+  "number": 17
+ },
+ {
+  "id": "t18",
+  "name": "T18",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "T18",
+   "CMI TV"
+  ],
+  "liveUrl": "https://www.t18.fr/",
+  "verified": "site",
+  "number": 18
+ },
+ {
+  "id": "novo19",
+  "name": "Novo19",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "Novo19",
+   "NOVO19",
+   "OFTV"
+  ],
+  "liveUrl": "https://www.tf1.fr/novo19/direct",
+  "verified": "a_tester",
+  "number": 19,
+  "appPackage": "fr.tf1.mytf1"
+ },
+ {
+  "id": "tf1sf",
+  "name": "TF1 Séries Films",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "TF1 Séries Films"
+  ],
+  "liveUrl": "https://www.tf1.fr/tf1-series-films/direct",
+  "verified": "site",
+  "number": 20,
+  "appPackage": "fr.tf1.mytf1"
+ },
+ {
+  "id": "lequipe",
+  "name": "L'Équipe",
+  "categories": [
+   "TNT",
+   "Sport"
+  ],
+  "epgNames": [
+   "L'Equipe",
+   "L'Équipe",
+   "LEquipe"
+  ],
+  "liveUrl": "https://www.lequipe.fr/tv/",
+  "verified": "a_tester",
+  "number": 21
+ },
+ {
+  "id": "6ter",
+  "name": "6ter",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "6ter"
+  ],
+  "liveUrl": "https://www.m6plus.fr/6ter/direct",
+  "verified": "site",
+  "number": 22,
+  "appPackage": "fr.m6.m6replay"
+ },
+ {
+  "id": "rmcstory",
+  "name": "RMC Story",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "RMC Story"
+  ],
+  "liveUrl": "https://www.rmcplus.fr/",
+  "verified": "site",
+  "number": 23
+ },
+ {
+  "id": "rmcdec",
+  "name": "RMC Découverte",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "RMC Découverte"
+  ],
+  "liveUrl": "https://www.rmcplus.fr/",
+  "verified": "site",
+  "number": 24
+ },
+ {
+  "id": "cherie25",
+  "name": "Chérie 25",
+  "categories": [
+   "TNT"
+  ],
+  "epgNames": [
+   "Chérie 25"
+  ],
+  "liveUrl": "https://www.nrj-play.fr/cherie-25/live",
+  "verified": "a_tester",
+  "number": 25
+ },
+ {
+  "id": "france24",
+  "name": "France 24",
+  "categories": [
+   "Infos"
+  ],
+  "epgNames": [
+   "France 24"
+  ],
+  "liveUrl": "https://www.france24.com/fr/direct",
+  "verified": "a_tester"
+ },
+ {
+  "id": "euronews",
+  "name": "Euronews",
+  "categories": [
+   "Infos"
+  ],
+  "epgNames": [
+   "Euronews"
+  ],
+  "liveUrl": "https://fr.euronews.com/live",
+  "verified": "a_tester"
+ },
+ {
+  "id": "bfmparis",
+  "name": "BFM Paris",
+  "categories": [
+   "Locales",
+   "Infos"
+  ],
+  "epgNames": [
+   "BFM Paris"
+  ],
+  "liveUrl": "https://www.bfmtv.com/paris/en-direct/",
+  "verified": "a_tester"
+ },
+ {
+  "id": "telenantes",
+  "name": "Télénantes",
+  "categories": [
+   "Locales"
+  ],
+  "epgNames": [
+   "Télénantes"
+  ],
+  "liveUrl": "https://www.telenantes.com/",
+  "verified": "a_tester"
+ },
+ {
+  "id": "tvrennes",
+  "name": "TV Rennes 35",
+  "categories": [
+   "Locales"
+  ],
+  "epgNames": [
+   "TV Rennes",
+   "TV Rennes 35"
+  ],
+  "liveUrl": "https://www.tvr.bzh/",
+  "verified": "a_tester"
+ },
+ {
+  "id": "tebeo",
+  "name": "Tébéo",
+  "categories": [
+   "Locales"
+  ],
+  "epgNames": [
+   "Tébéo"
+  ],
+  "liveUrl": "https://www.tebeo.bzh/",
+  "verified": "a_tester"
+ },
+ {
+  "id": "tv7",
+  "name": "TV7 Bordeaux",
+  "categories": [
+   "Locales"
+  ],
+  "epgNames": [
+   "TV7 Bordeaux"
+  ],
+  "liveUrl": "https://www.tv7.com/",
+  "verified": "a_tester"
+ },
+ {
+  "id": "via",
+  "name": "Vià Occitanie",
+  "categories": [
+   "Locales"
+  ],
+  "epgNames": [
+   "Vià Occitanie",
+   "ViaOccitanie",
+   "Via Occitanie"
+  ],
+  "liveUrl": "https://viaoccitanie.tv/",
+  "verified": "a_tester"
+ },
+ {
+  "id": "traceurban",
+  "name": "Trace Urban",
+  "categories": [
+   "Musique"
+  ],
+  "epgNames": [
+   "Trace Urban"
+  ],
+  "liveUrl": "https://www.trace.tv/",
+  "verified": "a_tester"
+ },
+ {
+  "id": "clubbing",
+  "name": "Clubbing TV",
+  "categories": [
+   "Musique"
+  ],
+  "epgNames": [
+   "Clubbing TV"
+  ],
+  "liveUrl": "https://www.clubbingtv.com/",
+  "verified": "a_tester"
+ }
+]
