@@ -52,8 +52,7 @@
   "id": "france4",
   "name": "France 4",
   "categories": [
-   "TNT",
-   "Jeunesse"
+   "TNT"
   ],
   "epgNames": [
    "France 4"
@@ -101,8 +100,7 @@
   "id": "arte",
   "name": "Arte",
   "categories": [
-   "TNT",
-   "Culture"
+   "TNT"
   ],
   "epgNames": [
    "Arte"
@@ -182,8 +180,7 @@
   "id": "gulli",
   "name": "Gulli",
   "categories": [
-   "TNT",
-   "Jeunesse"
+   "TNT"
   ],
   "epgNames": [
    "Gulli"
@@ -380,8 +377,7 @@
   "id": "rmcdec",
   "name": "RMC Découverte",
   "categories": [
-   "TNT",
-   "Documentaires"
+   "TNT"
   ],
   "epgNames": [
    "RMC Découverte"
@@ -397,8 +393,7 @@
   "id": "rmclife",
   "name": "RMC Life",
   "categories": [
-   "TNT",
-   "Lifestyle"
+   "TNT"
   ],
   "epgNames": [
    "RMC Life"
@@ -413,7 +408,7 @@
   "id": "free27",
   "name": "TV5 Monde",
   "categories": [
-   "Culture"
+   "Autres"
   ],
   "epgNames": [
    "TV5 Monde"
@@ -443,7 +438,7 @@
   "id": "free103",
   "name": "Box Office Action",
   "categories": [
-   "Cinéma"
+   "Ciné/Série"
   ],
   "epgNames": [
    "Box Office Action"
@@ -458,7 +453,7 @@
   "id": "free104",
   "name": "Box Office Drama",
   "categories": [
-   "Cinéma"
+   "Ciné/Série"
   ],
   "epgNames": [
    "Box Office Drama"
@@ -473,7 +468,7 @@
   "id": "free105",
   "name": "Box Office Thriller",
   "categories": [
-   "Cinéma"
+   "Ciné/Série"
   ],
   "epgNames": [
    "Box Office Thriller"
@@ -488,7 +483,7 @@
   "id": "free109",
   "name": "Rakuten TV Top Films",
   "categories": [
-   "Cinéma"
+   "Ciné/Série"
   ],
   "epgNames": [
    "Rakuten TV Top Films"
@@ -503,7 +498,7 @@
   "id": "free110",
   "name": "Rakuten TV Action",
   "categories": [
-   "Cinéma"
+   "Ciné/Série"
   ],
   "epgNames": [
    "Rakuten TV Action"
@@ -518,7 +513,7 @@
   "id": "free111",
   "name": "Rakuten TV Comédies",
   "categories": [
-   "Cinéma"
+   "Ciné/Série"
   ],
   "epgNames": [
    "Rakuten TV Comédies"
@@ -533,7 +528,7 @@
   "id": "free112",
   "name": "Rakuten TV Romance",
   "categories": [
-   "Cinéma"
+   "Ciné/Série"
   ],
   "epgNames": [
    "Rakuten TV Romance"
@@ -548,7 +543,7 @@
   "id": "free113",
   "name": "Rakuten TV Crime",
   "categories": [
-   "Cinéma"
+   "Ciné/Série"
   ],
   "epgNames": [
    "Rakuten TV Crime"
@@ -563,7 +558,7 @@
   "id": "free116",
   "name": "ShadowzTV",
   "categories": [
-   "Cinéma"
+   "Ciné/Série"
   ],
   "epgNames": [
    "ShadowzTV"
@@ -578,7 +573,7 @@
   "id": "free117",
   "name": "Ciné Gay",
   "categories": [
-   "Cinéma"
+   "Ciné/Série"
   ],
   "epgNames": [
    "Ciné Gay"
@@ -593,7 +588,7 @@
   "id": "free118",
   "name": "docs & enquêtes",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "docs & enquêtes"
@@ -608,7 +603,7 @@
   "id": "free121",
   "name": "Top Sci-Fi",
   "categories": [
-   "Cinéma"
+   "Ciné/Série"
   ],
   "epgNames": [
    "Top Sci-Fi"
@@ -743,7 +738,7 @@
   "id": "free401",
   "name": "Le Meilleur d'Arthur",
   "categories": [
-   "Divertissement"
+   "Autres"
   ],
   "epgNames": [
    "Le Meilleur d'Arthur"
@@ -758,7 +753,7 @@
   "id": "free405",
   "name": "Le Meilleur de la Téléréalité",
   "categories": [
-   "Divertissement"
+   "Autres"
   ],
   "epgNames": [
    "Le Meilleur de la Téléréalité"
@@ -773,7 +768,7 @@
   "id": "free406",
   "name": "Les Anges",
   "categories": [
-   "Divertissement"
+   "Autres"
   ],
   "epgNames": [
    "Les Anges"
@@ -788,7 +783,7 @@
   "id": "free407",
   "name": "Le Meilleur des Jeux TV",
   "categories": [
-   "Divertissement"
+   "Autres"
   ],
   "epgNames": [
    "Le Meilleur des Jeux TV"
@@ -803,7 +798,7 @@
   "id": "free408",
   "name": "Les Z'amours",
   "categories": [
-   "Divertissement"
+   "Autres"
   ],
   "epgNames": [
    "Les Z'amours"
@@ -818,7 +813,7 @@
   "id": "free409",
   "name": "Qui Veut Gagner Des Millions",
   "categories": [
-   "Divertissement"
+   "Autres"
   ],
   "epgNames": [
    "Qui Veut Gagner Des Millions"
@@ -833,7 +828,7 @@
   "id": "free414",
   "name": "Crime Enquêtes Faits Divers",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "Crime Enquêtes Faits Divers"
@@ -848,7 +843,7 @@
   "id": "free417",
   "name": "Mission Intervention",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "Mission Intervention"
@@ -863,7 +858,7 @@
   "id": "free421",
   "name": "Enquêtes de Choc",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "Enquêtes de Choc"
@@ -878,7 +873,7 @@
   "id": "free422",
   "name": "Homicide",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "Homicide"
@@ -893,7 +888,7 @@
   "id": "free423",
   "name": "Y'a que la vérité qui compte",
   "categories": [
-   "Divertissement"
+   "Autres"
   ],
   "epgNames": [
    "Y'a que la vérité qui compte"
@@ -908,7 +903,7 @@
   "id": "free427",
   "name": "RMC Alerte Secours",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "RMC Alerte Secours"
@@ -923,7 +918,7 @@
   "id": "free428",
   "name": "RMC Mecanic",
   "categories": [
-   "Lifestyle"
+   "Autres"
   ],
   "epgNames": [
    "RMC Mecanic"
@@ -938,7 +933,7 @@
   "id": "free429",
   "name": "RMC Mystère",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "RMC Mystère"
@@ -953,7 +948,7 @@
   "id": "free430",
   "name": "RMC WOW",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "RMC WOW"
@@ -968,7 +963,7 @@
   "id": "free431",
   "name": "Tech & Co",
   "categories": [
-   "Lifestyle"
+   "Autres"
   ],
   "epgNames": [
    "Tech & Co"
@@ -983,7 +978,7 @@
   "id": "free432",
   "name": "J'irai Dormir Chez Vous TV",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "J'irai Dormir Chez Vous TV"
@@ -998,7 +993,7 @@
   "id": "free436",
   "name": "Auto Plus TV",
   "categories": [
-   "Lifestyle"
+   "Autres"
   ],
   "epgNames": [
    "Auto Plus TV"
@@ -1013,7 +1008,7 @@
   "id": "free437",
   "name": "Marmiton TV",
   "categories": [
-   "Lifestyle"
+   "Autres"
   ],
   "epgNames": [
    "Marmiton TV"
@@ -1028,7 +1023,7 @@
   "id": "free438",
   "name": "Doctissimo TV",
   "categories": [
-   "Lifestyle"
+   "Autres"
   ],
   "epgNames": [
    "Doctissimo TV"
@@ -1043,7 +1038,7 @@
   "id": "free439",
   "name": "Maison & Travaux TV",
   "categories": [
-   "Lifestyle"
+   "Autres"
   ],
   "epgNames": [
    "Maison & Travaux TV"
@@ -1058,7 +1053,7 @@
   "id": "free448",
   "name": "Love Crime & History",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "Love Crime & History"
@@ -1073,7 +1068,7 @@
   "id": "free449",
   "name": "Voyages & Saveurs",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "Voyages & Saveurs"
@@ -1088,7 +1083,7 @@
   "id": "free450",
   "name": "Cap Terre",
   "categories": [
-   "Lifestyle"
+   "Autres"
   ],
   "epgNames": [
    "Cap Terre"
@@ -1103,7 +1098,7 @@
   "id": "free472",
   "name": "TravelXP",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "TravelXP"
@@ -1118,7 +1113,7 @@
   "id": "free473",
   "name": "Opsis TV",
   "categories": [
-   "Culture"
+   "Autres"
   ],
   "epgNames": [
    "Opsis TV"
@@ -1133,7 +1128,7 @@
   "id": "free475",
   "name": "100% Comedy",
   "categories": [
-   "Divertissement"
+   "Autres"
   ],
   "epgNames": [
    "100% Comedy"
@@ -1148,7 +1143,7 @@
   "id": "free476",
   "name": "Imearth",
   "categories": [
-   "Documentaires"
+   "Autres"
   ],
   "epgNames": [
    "Imearth"
@@ -1163,7 +1158,7 @@
   "id": "free478",
   "name": "Mieux TV",
   "categories": [
-   "Lifestyle"
+   "Autres"
   ],
   "epgNames": [
    "Mieux TV"
@@ -1178,7 +1173,7 @@
   "id": "free479",
   "name": "Sqool TV",
   "categories": [
-   "Jeunesse"
+   "Autres"
   ],
   "epgNames": [
    "Sqool TV"
@@ -1193,7 +1188,7 @@
   "id": "free480",
   "name": "EMCI TV",
   "categories": [
-   "Religion"
+   "Autres"
   ],
   "epgNames": [
    "EMCI TV"
@@ -1208,7 +1203,7 @@
   "id": "free481",
   "name": "EVTV",
   "categories": [
-   "Religion"
+   "Autres"
   ],
   "epgNames": [
    "EVTV"
@@ -1223,7 +1218,7 @@
   "id": "free482",
   "name": "KTO",
   "categories": [
-   "Religion"
+   "Autres"
   ],
   "epgNames": [
    "KTO"
@@ -1238,7 +1233,7 @@
   "id": "free483",
   "name": "Chrétiens TV",
   "categories": [
-   "Religion"
+   "Autres"
   ],
   "epgNames": [
    "Chrétiens TV"
@@ -1253,7 +1248,7 @@
   "id": "free484",
   "name": "God TV",
   "categories": [
-   "Religion"
+   "Autres"
   ],
   "epgNames": [
    "God TV"
@@ -1268,8 +1263,7 @@
   "id": "free532",
   "name": "L'Esprit Sorcier TV",
   "categories": [
-   "Jeunesse",
-   "Culture"
+   "Autres"
   ],
   "epgNames": [
    "L'Esprit Sorcier TV"
@@ -1419,8 +1413,8 @@
   "id": "free625",
   "name": "BFM Alsace",
   "categories": [
-   "Locales",
-   "Infos"
+   "Infos",
+   "Locales"
   ],
   "epgNames": [
    "BFM Alsace"
@@ -1435,8 +1429,8 @@
   "id": "free626",
   "name": "BFM DICI Alpes du Sud",
   "categories": [
-   "Locales",
-   "Infos"
+   "Infos",
+   "Locales"
   ],
   "epgNames": [
    "BFM DICI Alpes du Sud"
@@ -1451,8 +1445,8 @@
   "id": "free627",
   "name": "BFM DICI Haute-Provence",
   "categories": [
-   "Locales",
-   "Infos"
+   "Infos",
+   "Locales"
   ],
   "epgNames": [
    "BFM DICI Haute-Provence"
@@ -1467,8 +1461,8 @@
   "id": "free628",
   "name": "BFM Grand Lille",
   "categories": [
-   "Locales",
-   "Infos"
+   "Infos",
+   "Locales"
   ],
   "epgNames": [
    "BFM Grand Lille"
@@ -1483,8 +1477,8 @@
   "id": "free629",
   "name": "BFM Grand Littoral",
   "categories": [
-   "Locales",
-   "Infos"
+   "Infos",
+   "Locales"
   ],
   "epgNames": [
    "BFM Grand Littoral"
@@ -1499,8 +1493,8 @@
   "id": "free630",
   "name": "BFM Lyon",
   "categories": [
-   "Locales",
-   "Infos"
+   "Infos",
+   "Locales"
   ],
   "epgNames": [
    "BFM Lyon"
@@ -1515,8 +1509,8 @@
   "id": "free631",
   "name": "BFM Marseille Provence",
   "categories": [
-   "Locales",
-   "Infos"
+   "Infos",
+   "Locales"
   ],
   "epgNames": [
    "BFM Marseille Provence"
@@ -1531,8 +1525,8 @@
   "id": "free632",
   "name": "BFM Nice Côte d'Azur",
   "categories": [
-   "Locales",
-   "Infos"
+   "Infos",
+   "Locales"
   ],
   "epgNames": [
    "BFM Nice Côte d'Azur"
@@ -1547,8 +1541,8 @@
   "id": "free633",
   "name": "BFM Normandie",
   "categories": [
-   "Locales",
-   "Infos"
+   "Infos",
+   "Locales"
   ],
   "epgNames": [
    "BFM Normandie"
@@ -1563,8 +1557,8 @@
   "id": "free634",
   "name": "BFM Toulon Var",
   "categories": [
-   "Locales",
-   "Infos"
+   "Infos",
+   "Locales"
   ],
   "epgNames": [
    "BFM Toulon Var"
@@ -1596,7 +1590,7 @@
   "name": "France 24 Arabe",
   "categories": [
    "Infos",
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "France 24 Arabe"
@@ -1612,7 +1606,7 @@
   "name": "France 24 English",
   "categories": [
    "Infos",
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "France 24 English"
@@ -1628,8 +1622,7 @@
   "name": "France 24 Español",
   "categories": [
    "Infos",
-   "Étrangères",
-   "Espagnol"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "France 24 Español"
@@ -1675,8 +1668,7 @@
   "name": "Newsmax",
   "categories": [
    "Infos",
-   "Étrangères",
-   "US"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Newsmax"
@@ -1692,7 +1684,7 @@
   "name": "Now News Global",
   "categories": [
    "Infos",
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Now News Global"
@@ -1708,7 +1700,7 @@
   "name": "Now News Arabic",
   "categories": [
    "Infos",
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Now News Arabic"
@@ -2819,7 +2811,7 @@
   "id": "free1152",
   "name": "Sudan TV",
   "categories": [
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Sudan TV"
@@ -2834,7 +2826,7 @@
   "id": "free1194",
   "name": "DRTV",
   "categories": [
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "DRTV"
@@ -2849,8 +2841,8 @@
   "id": "free1375",
   "name": "Al Ekhbariya TV",
   "categories": [
-   "Étrangères",
-   "Infos"
+   "Infos",
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Al Ekhbariya TV"
@@ -2865,7 +2857,7 @@
   "id": "free1377",
   "name": "Saudi TV",
   "categories": [
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Saudi TV"
@@ -2880,8 +2872,7 @@
   "id": "free1378",
   "name": "Sunnah TV",
   "categories": [
-   "Étrangères",
-   "Religion"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Sunnah TV"
@@ -2896,7 +2887,7 @@
   "id": "free1408",
   "name": "Al Watania TV",
   "categories": [
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Al Watania TV"
@@ -2911,7 +2902,7 @@
   "id": "free1437",
   "name": "Sharjah TV",
   "categories": [
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Sharjah TV"
@@ -2926,7 +2917,7 @@
   "id": "free1462",
   "name": "Kuwait TV",
   "categories": [
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Kuwait TV"
@@ -2941,7 +2932,7 @@
   "id": "free1483",
   "name": "Oman TV",
   "categories": [
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Oman TV"
@@ -2956,9 +2947,7 @@
   "id": "free1555",
   "name": "Arte (version allemande)",
   "categories": [
-   "Culture",
-   "Étrangères",
-   "Allemand"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Arte (version allemande)"
@@ -2974,7 +2963,7 @@
   "name": "RTP Noticias",
   "categories": [
    "Infos",
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "RTP Noticias"
@@ -2990,7 +2979,7 @@
   "name": "OstWest 24",
   "categories": [
    "Infos",
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "OstWest 24"
@@ -3006,7 +2995,7 @@
   "name": "Svoboda+",
   "categories": [
    "Infos",
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Svoboda+"
@@ -3022,7 +3011,7 @@
   "name": "Espreso",
   "categories": [
    "Infos",
-   "Étrangères"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Espreso"
@@ -3037,8 +3026,8 @@
   "id": "bfmparis",
   "name": "BFM Paris",
   "categories": [
-   "Locales",
-   "Infos"
+   "Infos",
+   "Locales"
   ],
   "epgNames": [
    "BFM Paris"
@@ -3101,8 +3090,7 @@
   "id": "uk_sky",
   "name": "Sky News",
   "categories": [
-   "Étrangères",
-   "UK"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Sky News"
@@ -3114,8 +3102,7 @@
   "id": "uk_gb",
   "name": "GB News",
   "categories": [
-   "Étrangères",
-   "UK"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "GB News"
@@ -3127,8 +3114,7 @@
   "id": "us_nbc",
   "name": "NBC News NOW",
   "categories": [
-   "Étrangères",
-   "US"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "NBC News NOW"
@@ -3140,8 +3126,7 @@
   "id": "us_abc",
   "name": "ABC News Live",
   "categories": [
-   "Étrangères",
-   "US"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "ABC News Live"
@@ -3153,8 +3138,7 @@
   "id": "us_cbs",
   "name": "CBS News 24/7",
   "categories": [
-   "Étrangères",
-   "US"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "CBS News 24/7"
@@ -3166,8 +3150,7 @@
   "id": "us_bloomberg",
   "name": "Bloomberg TV",
   "categories": [
-   "Étrangères",
-   "US"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Bloomberg TV"
@@ -3179,8 +3162,7 @@
   "id": "es_dw",
   "name": "DW Español",
   "categories": [
-   "Étrangères",
-   "Espagnol"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "DW Español"
@@ -3192,8 +3174,7 @@
   "id": "es_euronews",
   "name": "Euronews Español",
   "categories": [
-   "Étrangères",
-   "Espagnol"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "Euronews Español"
@@ -3205,8 +3186,7 @@
   "id": "de_dw",
   "name": "DW Deutsch",
   "categories": [
-   "Étrangères",
-   "Allemand"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "DW Deutsch"
@@ -3218,8 +3198,7 @@
   "id": "de_welt",
   "name": "WELT",
   "categories": [
-   "Étrangères",
-   "Allemand"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "WELT"
@@ -3231,8 +3210,7 @@
   "id": "de_ard",
   "name": "ARD Mediathek (direct)",
   "categories": [
-   "Étrangères",
-   "Allemand"
+   "Chaînes étrangères"
   ],
   "epgNames": [
    "ARD Mediathek (direct)"
@@ -3244,8 +3222,7 @@
   "id": "us_livenow",
   "name": "LiveNOW from FOX",
   "categories": [
-   "Étrangères",
-   "US"
+   "Chaînes étrangères"
   ],
   "liveUrl": "https://www.youtube.com/@LiveNOWfromFOX/live",
   "epgNames": [
@@ -3257,8 +3234,7 @@
   "id": "us_scripps",
   "name": "Scripps News",
   "categories": [
-   "Étrangères",
-   "US"
+   "Chaînes étrangères"
   ],
   "liveUrl": "https://www.youtube.com/@ScrippsNews/live",
   "epgNames": [
@@ -3270,8 +3246,7 @@
   "id": "de_tagesschau24",
   "name": "tagesschau24",
   "categories": [
-   "Étrangères",
-   "Allemand"
+   "Chaînes étrangères"
   ],
   "liveUrl": "https://www.youtube.com/@tagesschau/live",
   "epgNames": [
@@ -3283,8 +3258,7 @@
   "id": "de_phoenix",
   "name": "phoenix",
   "categories": [
-   "Étrangères",
-   "Allemand"
+   "Chaînes étrangères"
   ],
   "liveUrl": "https://www.youtube.com/@phoenix/live",
   "epgNames": [
