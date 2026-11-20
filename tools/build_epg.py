@@ -71,7 +71,9 @@ def fetch_xmltv(channels, now):
                     if app:
                         s, e = parse_t(el.get("start")), parse_t(el.get("stop"))
                         if s and e and e > now and s < end:
-                            progs.setdefault(app, {})[s] = (s, e, el.findtext("title") or "", el.findtext("desc"))
+                            pic = el.find("icon")
+                            progs.setdefault(app, {})[s] = (s, e, el.findtext("title") or "", el.findtext("desc"),
+                                                            pic.get("src") if pic is not None else None)
                     el.clear()
             print(f"XMLTV OK ({url}) : {len(progs)} chaînes")
             return progs, icons
@@ -83,6 +85,13 @@ def fetch_xmltv(channels, now):
 
 
 # ---------- Free TV ----------
+def picture_url(raw):
+    """Les images Free TV contiennent la hauteur voulue (h%d ou h1) : on demande 320 px."""
+    if not raw:
+        return None
+    return re.sub(r"/h1$", "/h320", raw.replace("%d", "320"))
+
+
 def fetch_free(channels, now):
     id_to_app = {}
     for c in channels:
@@ -122,12 +131,14 @@ def fetch_free(channels, now):
                 continue
             for it in items:
                 live = it.get("live") or {}
+                pics = it.get("pictures") or {}
+                img = picture_url(pics.get("preview") or pics.get("main"))
                 s, e = live.get("start"), live.get("end")
                 if not s or not e or e <= now.timestamp():
                     continue
                 ds, de = datetime.fromtimestamp(s, UTC), datetime.fromtimestamp(e, UTC)
                 desc = live.get("short_description") or live.get("description") or None
-                progs.setdefault(app, {})[ds] = (ds, de, live.get("title") or "", desc)
+                progs.setdefault(app, {})[ds] = (ds, de, live.get("title") or "", desc, img)
         time.sleep(0.2)
     print(f"Free TV OK : {calls_ok}/{FREE_HOURS} heures, {len(progs)} chaînes")
     return progs
@@ -155,11 +166,13 @@ def main():
         if c["id"] in icons:
             ET.SubElement(ch, "icon", {"src": icons[c["id"]]})
     for c in channels:
-        for s, e, title, desc in sorted(merged.get(c["id"], {}).values()):
+        for s, e, title, desc, img in sorted(merged.get(c["id"], {}).values(), key=lambda x: x[0]):
             p = ET.SubElement(tv, "programme", {"start": fmt(s), "stop": fmt(e), "channel": c["id"]})
             ET.SubElement(p, "title", {"lang": "fr"}).text = title
             if desc:
                 ET.SubElement(p, "desc", {"lang": "fr"}).text = desc
+            if img:
+                ET.SubElement(p, "icon", {"src": img})
     tmp = OUT + ".tmp"
     with gzip.GzipFile(tmp, "wb", mtime=0) as gz:
         ET.ElementTree(tv).write(gz, encoding="utf-8", xml_declaration=True)
