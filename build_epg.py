@@ -2,7 +2,7 @@
 """Génère epg.xml.gz : le guide TV des chaînes de channels.json.
 Sources : Free TV (API du guide, prioritaire) + XMLTV France (xmltvfr.fr) pour les autres chaînes et les logos.
 Le fichier produit est petit (seulement tes chaînes, 36 h) et lisible tel quel par l'appli TNT Hub."""
-import bisect, difflib, gzip, io, json, os, re, sys, time, unicodedata, urllib.request
+import bisect, concurrent.futures, difflib, gzip, io, json, os, re, sys, time, unicodedata, urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 
@@ -23,7 +23,7 @@ def norm(s):  # même normalisation que l'appli
     return re.sub(r"[^a-z0-9]", "", "".join(c for c in s if unicodedata.category(c) != "Mn"))
 
 
-def http_open(url, timeout=120):
+def http_open(url, timeout=60):
     return urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=timeout)
 
 
@@ -42,6 +42,7 @@ def parse_t(s):
 
 # ---------- XMLTV France ----------
 def fetch_xmltv(channels, now):
+    t0 = time.time()
     by_name = {}
     for c in channels:
         for n in [c["name"]] + c.get("epgNames", []):
@@ -75,7 +76,7 @@ def fetch_xmltv(channels, now):
                             progs.setdefault(app, {})[s] = (s, e, el.findtext("title") or "", el.findtext("desc"),
                                                             pic.get("src") if pic is not None else None)
                     el.clear()
-            print(f"XMLTV OK ({url}) : {len(progs)} chaînes")
+            print(f"XMLTV OK ({url}) : {len(progs)} chaînes ({time.time()-t0:.0f} s)")
             return progs, icons
         except Exception as ex:
             last_err = ex
@@ -93,6 +94,7 @@ def picture_url(raw):
 
 
 def fetch_free(channels, now):
+    t0 = time.time()
     id_to_app = {}
     for c in channels:
         m = re.search(r"included_channels/(\d+)", c.get("freeUrl") or "")
@@ -101,21 +103,30 @@ def fetch_free(channels, now):
         if c.get("freeEpgId"):                      # identifiant du guide imposé à la main (facultatif)
             id_to_app[str(c["freeEpgId"])] = c["id"]
     first = int(now.timestamp()) // 3600 * 3600
-    progs, calls_ok, shown = {}, 0, False
-    all_entries = {}                                # toutes les chaînes du guide Free TV, même hors offre gratuite
-    for h in range(FREE_HOURS):
+    progs, all_entries = {}, {}                     # all_entries : toutes les chaînes du guide Free TV, même hors offre gratuite
+
+    def load_hour(h):
         url = FREE_BASE + str(first + h * 3600)
-        data = None
-        for attempt in range(3):
+        last = None
+        for _ in range(3):
             try:
                 with http_open(url, 60) as r:
-                    data = json.loads(r.read().decode("utf-8"))
-                break
+                    return json.loads(r.read().decode("utf-8"))
             except Exception as ex:
-                if h == 0 and attempt == 2:
-                    print(f"Free TV indisponible ({url}) : {ex}", file=sys.stderr)
-                    return {}, {}
+                last = ex
                 time.sleep(1.5)
+        if h == 0:
+            print(f"Free TV indisponible ({url}) : {last}", file=sys.stderr)
+        return None
+
+    data0 = load_hour(0)
+    if data0 is None:
+        return {}, {}
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:     # les autres heures en parallèle
+        datas = [data0] + list(pool.map(load_hour, range(1, FREE_HOURS)))
+
+    calls_ok, shown = 0, False
+    for data in datas:
         if data is None:
             continue
         entries = (data.get("result") or {}).get("entries") or {}
@@ -143,8 +154,7 @@ def fetch_free(channels, now):
                 all_entries.setdefault(str(key), {})[ds] = prog
                 if app:
                     progs.setdefault(app, {})[ds] = prog
-        time.sleep(0.2)
-    print(f"Free TV OK : {calls_ok}/{FREE_HOURS} heures, {len(progs)} chaînes, {len(all_entries)} chaînes au total dans le guide")
+    print(f"Free TV OK : {calls_ok}/{FREE_HOURS} heures, {len(progs)} chaînes, {len(all_entries)} chaînes au total dans le guide ({time.time()-t0:.0f} s)")
     return progs, all_entries
 
 
@@ -216,8 +226,12 @@ def borrow_images(channels, merged, free_ids_done, all_free):
 def main():
     channels = json.load(open(CHANNELS, encoding="utf-8"))
     now = datetime.now(UTC)
-    xml_progs, icons = fetch_xmltv(channels, now)
-    free_progs, all_free = fetch_free(channels, now)
+    t0 = time.time()
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:      # téléchargements simultanés
+        f_xml = pool.submit(fetch_xmltv, channels, now)
+        f_free = pool.submit(fetch_free, channels, now)
+        (xml_progs, icons), (free_progs, all_free) = f_xml.result(), f_free.result()
+    print(f"Sources récupérées en {time.time()-t0:.0f} s")
     merged = dict(xml_progs)
     merged.update({k: v for k, v in free_progs.items() if v})   # Free TV prioritaire
     if all_free:
