@@ -9,7 +9,7 @@ from datetime import datetime, timedelta, timezone
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CHANNELS = os.environ.get("CHANNELS_JSON", os.path.join(ROOT, "channels.json"))
 OUT = os.environ.get("EPG_OUT", os.path.join(ROOT, "epg.xml.gz"))
-XMLTV_URLS = [u for u in os.environ.get(
+XMLTV_URLS = [u for u in os.environ.get(a
     "XMLTV_URLS", "https://xmltvfr.fr/xmltv/xmltv_fr.xml.gz,https://xmltvfr.fr/xmltv/xmltv.xml.gz").split(",") if u]
 FREE_BASE = os.environ.get("FREE_EPG_BASE", "https://api.oqee.net/api/v1/epg/all/")
 FREE_HOURS = int(os.environ.get("FREE_HOURS", "36"))
@@ -182,7 +182,7 @@ def borrow_images(channels, merged, free_ids_done, all_free):
             continue
         xml = sorted(merged.get(cid, {}).values(), key=lambda x: x[0])
         if len(xml) < 4:
-            if c.get("appPackage"):
+            if c.get("appPackage") and not c.get("note"):
                 print(f"Images Free TV : {c['name']} ignorée, seulement {len(xml)} programmes dans XMLTV")
             continue
         scores = []
@@ -204,9 +204,11 @@ def borrow_images(channels, merged, free_ids_done, all_free):
             continue
         k = best[1]
         st, v, n_img = starts[k], index[k], 0
+        n_xml_img = sum(1 for x in xml if x[4])
+        free_img = sum(1 for x in v if x[4])
+        sample_xml = next((x[4] for x in xml if x[4]), None)
+        sample_free = next((x[4] for x in v if x[4]), None)
         for s, e, title, desc, img in xml:
-            if img:
-                continue
             i = bisect.bisect_left(st, s - TOL)
             pick = None
             if i < len(st) and st[i] <= s + TOL:
@@ -215,17 +217,21 @@ def borrow_images(channels, merged, free_ids_done, all_free):
                 j = bisect.bisect_right(st, s) - 1
                 if j >= 0 and v[j][1] > s:
                     pick = v[j]
-            if pick and pick[4]:
+            if pick and pick[4]:                    # l'image Free TV est prioritaire sur celle de XMLTV
                 merged[cid][s] = (s, e, title, desc, pick[4])
                 n_img += 1
-        print(f"Images Free TV : {c['name']} = identifiant {k} (score {best[0]}/{len(xml)}), {n_img} images ajoutées")
+        print(f"Images Free TV : {c['name']} = identifiant {k} (score {best[0]}/{len(xml)}), {n_img} images Free TV utilisées "
+              f"[XMLTV avait {n_xml_img}/{len(xml)} images, Free TV a {free_img}/{len(v)} images]")
+        if c["id"] in ("tf1", "m6"):
+            print(f"   exemple image XMLTV : {sample_xml}")
+            print(f"   exemple image Free TV : {sample_free}")
         done += 1
     print(f"Chaînes hors offre gratuite associées : {done}")
     if failed:
         print(f"Non associées ({len(failed)}) :", "; ".join(failed[:30]))
 
 
-SCRIPT_VERSION = "2026-11-21 images Free TV + parallèle"
+SCRIPT_VERSION = "2026-11-21 v4 images Free TV prioritaires + https"
 
 
 def main():
@@ -257,7 +263,7 @@ def main():
         ch = ET.SubElement(tv, "channel", {"id": c["id"]})
         ET.SubElement(ch, "display-name").text = c["name"]
         if c["id"] in icons:
-            ET.SubElement(ch, "icon", {"src": icons[c["id"]]})
+            ET.SubElement(ch, "icon", {"src": re.sub(r"^http://", "https://", icons[c["id"]])})
     for c in channels:
         for s, e, title, desc, img in sorted(merged.get(c["id"], {}).values(), key=lambda x: x[0]):
             p = ET.SubElement(tv, "programme", {"start": fmt(s), "stop": fmt(e), "channel": c["id"]})
@@ -265,7 +271,7 @@ def main():
             if desc:
                 ET.SubElement(p, "desc", {"lang": "fr"}).text = desc
             if img:
-                ET.SubElement(p, "icon", {"src": img})
+                ET.SubElement(p, "icon", {"src": re.sub(r"^http://", "https://", img)})
     tmp = OUT + ".tmp"
     with gzip.GzipFile(tmp, "wb", mtime=0) as gz:
         ET.ElementTree(tv).write(gz, encoding="utf-8", xml_declaration=True)
